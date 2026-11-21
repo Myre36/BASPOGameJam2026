@@ -1861,6 +1861,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1870857882}
     - target: {fileID: 2983686710500103194, guid: 9c74a95a7a615f94d8bede4b508a01ea, type: 3}
+      propertyPath: bookOnTable
+      value: 
+      objectReference: {fileID: 405473085}
+    - target: {fileID: 2983686710500103194, guid: 9c74a95a7a615f94d8bede4b508a01ea, type: 3}
       propertyPath: inputManager
       value: 
       objectReference: {fileID: 1880639770}
