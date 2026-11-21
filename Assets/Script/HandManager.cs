@@ -18,11 +18,9 @@ public class HandManager : MonoBehaviour
     public GameObject guessHumanButton;
     public GameObject guessNotHumanButton;
 
-    [SerializeField]
-    private int amountWrong = 0;
+    public int amountWrong = 0;
 
-    [SerializeField]
-    private int amountGood = 0;
+    public int amountGood = 0;
 
     public void StartDayAction()
     {
