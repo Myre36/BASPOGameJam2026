@@ -8,9 +8,6 @@ public class HandManager : MonoBehaviour
     [SerializeField]
     private bool[] goodOrWrong;
 
-    [SerializeField]
-    private bool goodHand;
-
     private int handNumber = 0;
 
     public GameObject startDayButton;
@@ -26,6 +23,8 @@ public class HandManager : MonoBehaviour
     {
         hands[handNumber].SetActive(true);
         startDayButton.SetActive(false);
+        guessHumanButton.SetActive(true);
+        guessNotHumanButton.SetActive(true);
     }
 
     private void DisplayNextHand()
