@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     //So only this script can change Dontdestroyonload.
     public static GameManager Instance { get; private set; }
     //Grabbing elements from HandManager script.
-    [SerializeField] private HandManager handManager; //amountWrong amountRight
+    [SerializeField] private HandManager handManager; //amountWrong amountGood
 
     //Array people for amount of people for the first day. Gives 5 people. Non-temporary placeholder dayOver.
     private bool[] people = new bool[5];
