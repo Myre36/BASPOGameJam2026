@@ -484,6 +484,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2983686710500103194, guid: 9c74a95a7a615f94d8bede4b508a01ea, type: 3}
+      propertyPath: bookPrefab
+      value: 
+      objectReference: {fileID: 690562343}
+    - target: {fileID: 2983686710500103194, guid: 9c74a95a7a615f94d8bede4b508a01ea, type: 3}
       propertyPath: inputManager
       value: 
       objectReference: {fileID: 1239977341}

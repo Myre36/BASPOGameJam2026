@@ -3,7 +3,7 @@ using UnityEngine;
 public class BookManager : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
-    public GameObject spriteObject;
+    public GameObject bookPrefab;
     [SerializeField] private bool bookOpen = default;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,10 +15,11 @@ public class BookManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Checks for 1 frame if spacebar was pressed. Inverts bookOpen and then sets it to that inversion.
         if (inputManager.sBar.WasPressedThisFrame())
         {
-            spriteObject.SetActive(!bookOpen);
             bookOpen = !bookOpen;
+            bookPrefab.SetActive(bookOpen);
         }
     }
 
