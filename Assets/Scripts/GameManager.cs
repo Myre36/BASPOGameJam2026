@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     //Game over conditionals.
     public void threeStrikesOut()
     {
-        if (handManager.amountWrong == 3)
+        if (handManager.amountWrong == 4)
         {
             SceneManager.LoadScene("GameOverScene");
         }

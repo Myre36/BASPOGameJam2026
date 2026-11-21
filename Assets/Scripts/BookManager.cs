@@ -4,6 +4,7 @@ public class BookManager : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
     public GameObject bookPrefab;
+    public GameObject bookOnTable;
     [SerializeField] private bool bookOpen = default;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,6 +21,7 @@ public class BookManager : MonoBehaviour
         {
             bookOpen = !bookOpen;
             bookPrefab.SetActive(bookOpen);
+            bookOnTable.SetActive(!bookOpen);
         }
     }
 
