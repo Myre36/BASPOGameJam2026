@@ -9,10 +9,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private HandManager handManager; //amountWrong amountGood
 
     //Array people for amount of people for the first day. Gives 5 people. Non-temporary placeholder dayOver.
-    private bool[] people = new bool[5];
+    private bool?[] people = new bool?[5];
     [SerializeField] private bool dayOver = default;
 
     // For CheckAnswer() 
+    public int peopleChecker = 1;
     private int maxPeople = 0;
 
     void Awake()

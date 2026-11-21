@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class HandManager : MonoBehaviour
 {
+
+    [SerializeField] 
+    private GameManager gameManager;
+    
     //A refrence to the hands that are displayed through the day
     [SerializeField]
     private GameObject[] hands;
@@ -23,6 +27,9 @@ public class HandManager : MonoBehaviour
     public GameObject guessHumanButtonVisual;
     public GameObject guessNotHumanButton;
     public GameObject guessNotHumanButtonVisual;
+
+    private bool buttonsCanBePressed = default;
+    
 
     //How many wrong guesses you've made
     public int amountWrong = 0;
@@ -57,46 +64,57 @@ public class HandManager : MonoBehaviour
     //The method for guessing that the hand is human
     public void GuessHuman()
     {
-        if (goodOrWrong[handNumber] == true) 
+        if (buttonsCanBePressed == true)
         {
-            amountGood++;
-        }
-        else
-        {
-            BloodSplatter();
-            amountWrong++;
-        }
 
-        hands[handNumber].SetActive(false);
 
-        StartCoroutine(DisplayHandsWithDelay());
+            if (goodOrWrong[handNumber] == true)
+            {
+                amountGood++;
+            }
+            else
+            {
+                BloodSplatter();
+                amountWrong++;
+            }
+
+            hands[handNumber].SetActive(false);
+            buttonsCanBePressed = false;
+
+            StartCoroutine(DisplayHandsWithDelay());
+        }
     }
 
-    //Method for guessing that somone is not human
+    //Method for guessing that someone is not human
     public void GuessNotHuman()
     {
-        if (goodOrWrong[handNumber] == false)
+        if (buttonsCanBePressed == true)
         {
-            amountGood++;
-        }
-        else
-        {
-            BloodSplatter();
-            amountWrong++;
-        }
+            if (goodOrWrong[handNumber] == false)
+            {
+                amountGood++;
+            }
+            else
+            {
+                BloodSplatter();
+                amountWrong++;
+            }
 
-        hands[handNumber].SetActive(false);
+            hands[handNumber].SetActive(false);
+            buttonsCanBePressed = false;
 
-        StartCoroutine(DisplayHandsWithDelay());
+            StartCoroutine(DisplayHandsWithDelay());
+        }
     }
 
     //Couroutine for displaying the first hand
     IEnumerator DisplayHandsWithDelay()
     {
+        
         yield return new WaitForSeconds(3);
         handNumber++;
-
         hands[handNumber].SetActive(true);
+        buttonsCanBePressed = true;
     }
 
     //Cououtine for going to the next game
@@ -104,6 +122,7 @@ public class HandManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         hands[handNumber].SetActive(true);
+        buttonsCanBePressed = true;
     }
 
     void BloodSplatter()
