@@ -50,7 +50,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  goodOrWrong: 0101000100
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  goodOrWrong: 01010001000001000001
   startDayButton: {fileID: 0}
   guessHumanButton: {fileID: 0}
   guessNotHumanButton: {fileID: 0}

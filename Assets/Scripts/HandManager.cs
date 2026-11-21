@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class HandManager : MonoBehaviour
@@ -19,19 +20,16 @@ public class HandManager : MonoBehaviour
 
     public int amountGood = 0;
 
+    public GameObject mainLight;
+
     public void StartDayAction()
     {
-        hands[handNumber].SetActive(true);
+        mainLight.SetActive(true);
         startDayButton.SetActive(false);
         guessHumanButton.SetActive(true);
         guessNotHumanButton.SetActive(true);
-    }
 
-    private void DisplayNextHand()
-    {
-        handNumber++;
-
-        hands[handNumber].SetActive(true);
+        StartCoroutine(DisplayFirstHandWithDelay());
     }
 
     public void GuessHuman()
@@ -47,7 +45,7 @@ public class HandManager : MonoBehaviour
 
         hands[handNumber].SetActive(false);
 
-        DisplayNextHand();
+        StartCoroutine(DisplayHandsWithDelay());
     }
 
     public void GuessNotHuman()
@@ -63,6 +61,20 @@ public class HandManager : MonoBehaviour
 
         hands[handNumber].SetActive(false);
 
-        DisplayNextHand();
+        StartCoroutine(DisplayHandsWithDelay());
+    }
+
+    IEnumerator DisplayHandsWithDelay()
+    {
+        yield return new WaitForSeconds(3);
+        handNumber++;
+
+        hands[handNumber].SetActive(true);
+    }
+
+    IEnumerator DisplayFirstHandWithDelay()
+    {
+        yield return new WaitForSeconds(3);
+        hands[handNumber].SetActive(true);
     }
 }
