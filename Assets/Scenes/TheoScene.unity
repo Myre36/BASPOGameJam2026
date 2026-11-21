@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0accf2d13fe15b641a056fbc48fee1fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  people: 
+  dayOver: 0
 --- !u!61 &998897994
 BoxCollider2D:
   m_ObjectHideFlags: 0
