@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: d81a5657be7e03740aeba3cce3aa8d69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8848979932032407067
+    second: BloodSplatterStage3_0
+  - first:
+      213: -6281889451751417318
+    second: BloodSplatterStage3_1
+  - first:
+      213: -3872576099033327667
+    second: BloodSplatterStage3_2
+  - first:
+      213: -8104449910935729202
+    second: BloodSplatterStage3_3
+  - first:
+      213: -5186348054039330967
+    second: BloodSplatterStage3_4
+  - first:
+      213: 6085625342664524850
+    second: BloodSplatterStage3_5
+  - first:
+      213: -2224572989544092889
+    second: BloodSplatterStage3_6
+  - first:
+      213: 2996197450336691658
+    second: BloodSplatterStage3_7
+  - first:
+      213: 1200307905604063230
+    second: BloodSplatterStage3_8
+  - first:
+      213: -190187701507303323
+    second: BloodSplatterStage3_9
+  - first:
+      213: -7853797625470187527
+    second: BloodSplatterStage3_10
+  - first:
+      213: 8547061869479012698
+    second: BloodSplatterStage3_11
+  - first:
+      213: -1238590394751355742
+    second: BloodSplatterStage3_12
+  - first:
+      213: 6102223036792325875
+    second: BloodSplatterStage3_13
+  - first:
+      213: -3117276271331666157
+    second: BloodSplatterStage3_14
+  - first:
+      213: 6196624568307937390
+    second: BloodSplatterStage3_15
+  - first:
+      213: -6645453976784758222
+    second: BloodSplatterStage3_16
+  - first:
+      213: -3175177721716814146
+    second: BloodSplatterStage3_17
+  - first:
+      213: -3864223972134800362
+    second: BloodSplatterStage3_18
+  - first:
+      213: 2465960793769413656
+    second: BloodSplatterStage3_19
+  - first:
+      213: 3986797577026315176
+    second: BloodSplatterStage3_20
+  - first:
+      213: -6872755716314984247
+    second: BloodSplatterStage3_21
+  - first:
+      213: 2904178553535355334
+    second: BloodSplatterStage3_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BloodSplatterStage3_0
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1447
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b161a514d54edca70800000000000000
+      internalID: 8848979932032407067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_1
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1446
+        width: 6
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a551693de32d8a0800000000000000
+      internalID: -6281889451751417318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_2
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 393
+        width: 1172
+        height: 1181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc753734e88d14ac0800000000000000
+      internalID: -3872576099033327667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_3
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1338
+        width: 8
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbcab6ceb5378f80800000000000000
+      internalID: -8104449910935729202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_4
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 1374
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f727d5ce36608b0800000000000000
+      internalID: -5186348054039330967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_5
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1312
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23442a1910c747450800000000000000
+      internalID: 6085625342664524850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_6
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 1253
+        width: 15
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72bab4df6aab021e0800000000000000
+      internalID: -2224572989544092889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_7
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1146
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5ef30e4b1a49920800000000000000
+      internalID: 2996197450336691658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_8
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 965
+        width: 55
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff8f9e3ea958a010800000000000000
+      internalID: 1200307905604063230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_9
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 948
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568520b0b415c5df0800000000000000
+      internalID: -190187701507303323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_10
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 816
+        width: 39
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f70b0cbba4b10390800000000000000
+      internalID: -7853797625470187527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_11
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 888
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a59259b6c734d9670800000000000000
+      internalID: 8547061869479012698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_12
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 788
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a472aa2994afcee0800000000000000
+      internalID: -1238590394751355742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_13
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 796
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6463065837fa450800000000000000
+      internalID: 6102223036792325875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_14
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 779
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317958c4fb53db4d0800000000000000
+      internalID: -3117276271331666157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_15
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 770
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60f378b635def550800000000000000
+      internalID: 6196624568307937390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_16
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 759
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a998631da96c3a0800000000000000
+      internalID: -6645453976784758222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_17
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 734
+        width: 7
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebec5565fa08fe3d0800000000000000
+      internalID: -3175177721716814146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_18
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 734
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6143b5855c48f5ac0800000000000000
+      internalID: -3864223972134800362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_19
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 709
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c8aa6d64ad83220800000000000000
+      internalID: 2465960793769413656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_20
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 552
+        width: 18
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3aa0af543f35730800000000000000
+      internalID: 3986797577026315176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_21
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 534
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c09205e6111f90a0800000000000000
+      internalID: -6872755716314984247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodSplatterStage3_22
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 342
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c958c7e107bd4820800000000000000
+      internalID: 2904178553535355334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BloodSplatterStage3_0: 8848979932032407067
+      BloodSplatterStage3_1: -6281889451751417318
+      BloodSplatterStage3_10: -7853797625470187527
+      BloodSplatterStage3_11: 8547061869479012698
+      BloodSplatterStage3_12: -1238590394751355742
+      BloodSplatterStage3_13: 6102223036792325875
+      BloodSplatterStage3_14: -3117276271331666157
+      BloodSplatterStage3_15: 6196624568307937390
+      BloodSplatterStage3_16: -6645453976784758222
+      BloodSplatterStage3_17: -3175177721716814146
+      BloodSplatterStage3_18: -3864223972134800362
+      BloodSplatterStage3_19: 2465960793769413656
+      BloodSplatterStage3_2: -3872576099033327667
+      BloodSplatterStage3_20: 3986797577026315176
+      BloodSplatterStage3_21: -6872755716314984247
+      BloodSplatterStage3_22: 2904178553535355334
+      BloodSplatterStage3_3: -8104449910935729202
+      BloodSplatterStage3_4: -5186348054039330967
+      BloodSplatterStage3_5: 6085625342664524850
+      BloodSplatterStage3_6: -2224572989544092889
+      BloodSplatterStage3_7: 2996197450336691658
+      BloodSplatterStage3_8: 1200307905604063230
+      BloodSplatterStage3_9: -190187701507303323
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

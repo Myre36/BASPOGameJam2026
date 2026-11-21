@@ -12,9 +12,12 @@ public class HandManager : MonoBehaviour
     private int handNumber = 0;
 
     public GameObject startDayButton;
+    public GameObject startDayButtonVisual;
 
     public GameObject guessHumanButton;
+    public GameObject guessHumanButtonVisual;
     public GameObject guessNotHumanButton;
+    public GameObject guessNotHumanButtonVisual;
 
     public int amountWrong = 0;
 
@@ -26,8 +29,11 @@ public class HandManager : MonoBehaviour
     {
         mainLight.SetActive(true);
         startDayButton.SetActive(false);
+        startDayButtonVisual.SetActive(true);
         guessHumanButton.SetActive(true);
+        guessHumanButtonVisual.SetActive(false);
         guessNotHumanButton.SetActive(true);
+        guessNotHumanButtonVisual.SetActive(false);
 
         StartCoroutine(DisplayFirstHandWithDelay());
     }
