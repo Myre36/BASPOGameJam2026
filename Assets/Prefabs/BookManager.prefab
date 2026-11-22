@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 998495532181034274}
   - component: {fileID: 2983686710500103194}
+  - component: {fileID: 824036367504895596}
   m_Layer: 0
   m_Name: BookManager
   m_TagString: Untagged
@@ -45,5 +46,116 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookManager
   inputManager: {fileID: 0}
-  spriteObject: {fileID: 0}
+  bookOnTable: {fileID: 0}
+  book: {fileID: 0}
+  pageSprites:
+  - {fileID: 2588965437645987274, guid: f66a0fc96f904824d9cdaea7de0680b3, type: 3}
+  - {fileID: 848697184373492302, guid: cd8ff1c1f3b378144af313e20649d9d5, type: 3}
+  - {fileID: -5210605757840286950, guid: e0bbb4beb9583284aa719c485b0ddc67, type: 3}
+  - {fileID: 533572491300144185, guid: c60f1cc6750399840aeb5b626dbea56b, type: 3}
+  - {fileID: -7352319878372871529, guid: 2b5f972e30ab67643b29b81b27ac9ea8, type: 3}
+  - {fileID: -9045481101141076781, guid: 03ba213e4b0d29841900f483cef1d948, type: 3}
+  bookPage: 0
   bookOpen: 0
+  audioPlayer: {fileID: 824036367504895596}
+  pageTurn2: {fileID: 8300000, guid: b39a280972a79a9478da38ab515dbf9f, type: 3}
+  pageTurn1: {fileID: 8300000, guid: 163814ec09ac30546b6138ce4ef2eaca, type: 3}
+  putDown: {fileID: 8300000, guid: c54ecce14e24306469fcc6ee5ef3cd83, type: 3}
+  pickUp: {fileID: 8300000, guid: 8a1d2c37dd0f8ea40bc354aaf9662f70, type: 3}
+--- !u!82 &824036367504895596
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637826411855209012}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.201
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
