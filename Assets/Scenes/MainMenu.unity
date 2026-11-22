@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 249623919}
   - component: {fileID: 249623918}
   - component: {fileID: 249623917}
+  - component: {fileID: 249623920}
   m_Layer: 0
   m_Name: Btn_Exit
   m_TagString: Untagged
@@ -252,6 +253,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249623915}
   m_CullTransparentMesh: 1
+--- !u!114 &249623920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249623915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576810535b78eb84ba4a6991089f47bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorHover
+  normalCursor: {fileID: 2800000, guid: ee64473aff1dc49f997a604f065b5ef6, type: 3}
+  hoverCursor: {fileID: 2800000, guid: b9cc297a300ce4526a135fd94fd9d117, type: 3}
+  hotspot: {x: 32, y: 0}
 --- !u!1 &410712388
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +384,7 @@ GameObject:
   - component: {fileID: 424380863}
   - component: {fileID: 424380862}
   - component: {fileID: 424380861}
+  - component: {fileID: 424380864}
   m_Layer: 0
   m_Name: Btn_Start
   m_TagString: Untagged
@@ -488,6 +505,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424380859}
   m_CullTransparentMesh: 1
+--- !u!114 &424380864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424380859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576810535b78eb84ba4a6991089f47bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorHover
+  normalCursor: {fileID: 2800000, guid: ee64473aff1dc49f997a604f065b5ef6, type: 3}
+  hoverCursor: {fileID: 2800000, guid: b9cc297a300ce4526a135fd94fd9d117, type: 3}
+  hotspot: {x: 32, y: 0}
 --- !u!1 &666263988
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +607,7 @@ GameObject:
   - component: {fileID: 684147142}
   - component: {fileID: 684147141}
   - component: {fileID: 684147140}
+  - component: {fileID: 684147143}
   m_Layer: 0
   m_Name: Btn_Quit
   m_TagString: Untagged
@@ -695,6 +728,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684147138}
   m_CullTransparentMesh: 1
+--- !u!114 &684147143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684147138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576810535b78eb84ba4a6991089f47bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorHover
+  normalCursor: {fileID: 2800000, guid: ee64473aff1dc49f997a604f065b5ef6, type: 3}
+  hoverCursor: {fileID: 2800000, guid: b9cc297a300ce4526a135fd94fd9d117, type: 3}
+  hotspot: {x: 32, y: 0}
 --- !u!1 &914025870
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +969,7 @@ GameObject:
   - component: {fileID: 1122713021}
   - component: {fileID: 1122713020}
   - component: {fileID: 1122713019}
+  - component: {fileID: 1122713022}
   m_Layer: 0
   m_Name: Btn_Credits
   m_TagString: Untagged
@@ -1041,6 +1090,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122713017}
   m_CullTransparentMesh: 1
+--- !u!114 &1122713022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122713017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576810535b78eb84ba4a6991089f47bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorHover
+  normalCursor: {fileID: 2800000, guid: ee64473aff1dc49f997a604f065b5ef6, type: 3}
+  hoverCursor: {fileID: 2800000, guid: b9cc297a300ce4526a135fd94fd9d117, type: 3}
+  hotspot: {x: 32, y: 0}
 --- !u!1 &1216366544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,7 +1162,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7405661294618894375, guid: fa8b1e132e6dd48e2a9db7b599fd26f2, type: 3}
+  m_Sprite: {fileID: -4089930967235335145, guid: e1bac9144d564434e95eda51878753d8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
