@@ -3,8 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    //So only this script can change Dontdestroyonload.
-    public static GameManager Instance { get; private set; }
     //Grabbing elements from HandManager script.
     [SerializeField] private HandManager handManager; //amountWrong amountGood
 
@@ -18,15 +16,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        //Making sure there are no duplicates.
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+        
     }
 
     void FixedUpdate()

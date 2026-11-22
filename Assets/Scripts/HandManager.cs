@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class HandManager : MonoBehaviour
-{
+{ 
 
     [SerializeField] 
     private GameManager gameManager;
@@ -49,6 +49,7 @@ public class HandManager : MonoBehaviour
     public GameObject bloodTwo;
     public GameObject bloodThree;
 
+    
     //The start of day action
     public void StartDayAction()
     {
@@ -70,8 +71,6 @@ public class HandManager : MonoBehaviour
     {
         if (buttonsCanBePressed == true)
         {
-
-
             if (goodOrWrong[handNumber] == true)
             {
                 amountGood++;
@@ -116,7 +115,7 @@ public class HandManager : MonoBehaviour
     {     
         yield return new WaitForSeconds(3);
 
-        //Picks a random number between 0 and 9.
+        //Picks a random number between 0 and 9. UnityEngine just to make sure no conflict between System.Random and UnityEngine.Random.
         handNumber = UnityEngine.Random.Range(0, (hands.Length));
 
         //Checks how long it is based on the length of the object hands.
