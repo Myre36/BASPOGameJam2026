@@ -32,7 +32,9 @@ public class HandManager : MonoBehaviour
 
     // First one will always be zero, then in DisplayHandsWithDelay() it will now choose randomly.
     private int handNumber = 0;
-    private int?[] handNumberChecker = new int?[10];
+
+    [SerializeField] 
+    private int?[] handNumberChecker = new int?[20];
     private int addNumber = 0;
 
     //How many wrong guesses you've made
@@ -161,6 +163,7 @@ public class HandManager : MonoBehaviour
 
         //Picks a random number between 0 and 9. UnityEngine just to make sure no conflict between System.Random and UnityEngine.Random.
         handNumber = UnityEngine.Random.Range(0, (hands.Length));
+        Debug.Log(hands.Length);
 
         //Checks how long it is based on the length of the array hands.
         for (int i = 0; i < hands.Length; i++)
@@ -185,7 +188,7 @@ public class HandManager : MonoBehaviour
         }
 
         //To avoid game loop breaks. Because addNumber is updated after checking this condition it needs to be the same number as the last element in the array. 
-        if (addNumber !<= 9)
+        if (addNumber !<= (hands.Length - 1))
         {
             //Adds the number into the array. Increases addNumber after so that it will not change a number already chosen.
             handNumberChecker[addNumber] = handNumber;
