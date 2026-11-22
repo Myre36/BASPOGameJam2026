@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
             }
 
             // If every person in people are true, dayOver is true.
-            if (maxPeople == 5)
+            if (maxPeople == people.Length)
             {
                 handManager.amountWrong = 0;
                 dayOver = true;
