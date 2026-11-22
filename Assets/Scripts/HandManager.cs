@@ -125,6 +125,7 @@ public class HandManager : MonoBehaviour
             //As long as the number randomly chosen is a number in the array, randomly generate a new one until it isn't in the array
             while (handNumber == handNumberChecker[i])
             {
+                //Checks if the last element in the array is not null. If it is breaks the loop. To prevent game crash and memory leak.
                 if (handNumberChecker[9] != null)
                 {
                     Debug.Log("I broke");
@@ -140,11 +141,13 @@ public class HandManager : MonoBehaviour
             Debug.Log(handNumberChecker[i]);
         }
 
+        //To avoid game loop breaks. Because addNumber is updated after it needs to be the same number as the last element in the array. 
         if (addNumber !<= 9)
         {
             //Adds the number into the array. Increases addNumber after so that it will not change a number already chosen.
             handNumberChecker[addNumber] = handNumber;
             addNumber++;
+            //Gameplay with a full array will be randomized without checking for duplicates due to the conditions of the while loop above.
         }
 
         hands[handNumber].SetActive(true);
