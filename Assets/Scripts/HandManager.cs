@@ -114,7 +114,7 @@ public class HandManager : MonoBehaviour
                 gateAudio.clip = gateOpenInfected;
             }
 
-            gateAudio.Play();
+            gateAudio.PlayDelayed(0.6f);
 
             hands[handNumber].SetActive(false);
             buttonsCanBePressed = false;
@@ -142,7 +142,7 @@ public class HandManager : MonoBehaviour
                 turretAudio.clip = shotHuman;
             }
 
-            turretAudio.Play();
+            turretAudio.PlayDelayed(0.15f);
 
             hands[handNumber].SetActive(false);
             buttonsCanBePressed = false;
@@ -156,10 +156,10 @@ public class HandManager : MonoBehaviour
     {
         //Play audio of someone walking in
         walkAudio.clip = walkIn;
-        walkAudio.Play();
+        walkAudio.PlayDelayed(2.2f);
         
         //Suggestion: Getting the length of the audio clip above to control this wait
-        yield return new WaitForSeconds(walkIn.length + 0.5f);
+        yield return new WaitForSeconds(walkIn.length + 3f);
 
         //Picks a random number between 0 and 9. UnityEngine just to make sure no conflict between System.Random and UnityEngine.Random.
         handNumber = UnityEngine.Random.Range(0, (hands.Length));
@@ -203,7 +203,10 @@ public class HandManager : MonoBehaviour
     //Couroutine for going to the next game
     IEnumerator DisplayFirstHandWithDelay()
     {
-        yield return new WaitForSeconds(3);
+        walkAudio.clip = walkIn;
+        walkAudio.Play();
+
+        yield return new WaitForSeconds(walkIn.length);
         hands[handNumber].SetActive(true);
         handNumberChecker[addNumber] = handNumber;
         addNumber++;
