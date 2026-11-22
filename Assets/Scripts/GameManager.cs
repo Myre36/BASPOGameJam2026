@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
 
         if (dayOver == true)
         {
+            dayOver = false;
             SceneManager.LoadScene("DayOver");
         }
     }
