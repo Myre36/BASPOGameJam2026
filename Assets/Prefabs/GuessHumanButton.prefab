@@ -149,13 +149,14 @@ GameObject:
   - component: {fileID: 8966893467847004604}
   - component: {fileID: 1774361434520317532}
   - component: {fileID: 2685961447940571601}
+  - component: {fileID: 3980942217611908578}
   m_Layer: 5
   m_Name: GuessHumanButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3513713569823364552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -165,7 +166,7 @@ RectTransform:
   m_GameObject: {fileID: 5383116728308811532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 882907735875159416}
@@ -270,3 +271,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3980942217611908578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383116728308811532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576810535b78eb84ba4a6991089f47bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorHover
+  normalCursor: {fileID: 2800000, guid: ee64473aff1dc49f997a604f065b5ef6, type: 3}
+  hoverCursor: {fileID: 2800000, guid: b9cc297a300ce4526a135fd94fd9d117, type: 3}
+  hotspot: {x: 32, y: 0}

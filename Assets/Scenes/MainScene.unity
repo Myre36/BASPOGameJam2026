@@ -2489,6 +2489,7 @@ GameObject:
   - component: {fileID: 1223093024}
   - component: {fileID: 1223093023}
   - component: {fileID: 1223093022}
+  - component: {fileID: 1223093025}
   m_Layer: 5
   m_Name: LightSwitchOff
   m_TagString: Untagged
@@ -2609,6 +2610,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223093020}
   m_CullTransparentMesh: 1
+--- !u!114 &1223093025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223093020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576810535b78eb84ba4a6991089f47bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorHover
+  normalCursor: {fileID: 2800000, guid: ee64473aff1dc49f997a604f065b5ef6, type: 3}
+  hoverCursor: {fileID: 2800000, guid: b9cc297a300ce4526a135fd94fd9d117, type: 3}
+  hotspot: {x: 32, y: 0}
 --- !u!1 &1352979680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3226,6 +3242,7 @@ GameObject:
   - component: {fileID: 1649921102}
   - component: {fileID: 1649921101}
   - component: {fileID: 1649921100}
+  - component: {fileID: 1649921103}
   m_Layer: 5
   m_Name: BookButton
   m_TagString: Untagged
@@ -3346,6 +3363,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649921098}
   m_CullTransparentMesh: 1
+--- !u!114 &1649921103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649921098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576810535b78eb84ba4a6991089f47bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorHover
+  normalCursor: {fileID: 2800000, guid: ee64473aff1dc49f997a604f065b5ef6, type: 3}
+  hoverCursor: {fileID: 2800000, guid: b9cc297a300ce4526a135fd94fd9d117, type: 3}
+  hotspot: {x: 32, y: 0}
 --- !u!1 &1699433134
 GameObject:
   m_ObjectHideFlags: 0
