@@ -70,6 +70,9 @@ public class HandManager : MonoBehaviour
     public AudioClip gateOpenInfected;
     public AudioClip gateOpenHuman;
 
+    public AudioSource buttonAudio;
+    public AudioClip buttonPress;
+
 
     //The start of day action
     public void StartDayAction()
@@ -95,6 +98,8 @@ public class HandManager : MonoBehaviour
     {
         if (buttonsCanBePressed == true)
         {
+            buttonAudio.clip = buttonPress;
+            buttonAudio.Play();
             if (goodOrWrong[handNumber] == true)
             {
                 amountGood++;
@@ -121,6 +126,8 @@ public class HandManager : MonoBehaviour
     {
         if (buttonsCanBePressed == true)
         {
+            buttonAudio.clip = buttonPress;
+            buttonAudio.Play();
             if (goodOrWrong[handNumber] == false)
             {
                 amountGood++;
