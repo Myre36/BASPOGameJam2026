@@ -141,7 +141,7 @@ public class HandManager : MonoBehaviour
             Debug.Log(handNumberChecker[i]);
         }
 
-        //To avoid game loop breaks. Because addNumber is updated after it needs to be the same number as the last element in the array. 
+        //To avoid game loop breaks. Because addNumber is updated after checking this condition it needs to be the same number as the last element in the array. 
         if (addNumber !<= 9)
         {
             //Adds the number into the array. Increases addNumber after so that it will not change a number already chosen.
