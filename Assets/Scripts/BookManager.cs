@@ -12,6 +12,13 @@ public class BookManager : MonoBehaviour
 
     [SerializeField] private bool bookOpen = default;
 
+    //Audio
+    public AudioSource audioPlayer;
+    public AudioClip pageTurn2;
+    public AudioClip pageTurn1;
+    public AudioClip putDown;
+    public AudioClip pickUp;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,6 +47,7 @@ public class BookManager : MonoBehaviour
                 bookPage = (pageSprites.Length - 1);
             }
             ShowPage();
+            PlayAudio(pageTurn1);
         }
 
         if (inputManager.lClick.WasPressedThisFrame() && bookOpen == true)
@@ -50,6 +58,7 @@ public class BookManager : MonoBehaviour
                 bookPage = 0;
             }
             ShowPage();
+            PlayAudio(pageTurn2);
         }
     }
     private void ShowPage()
@@ -62,5 +71,15 @@ public class BookManager : MonoBehaviour
         bookOpen = !bookOpen;
         book.SetActive(bookOpen);
         bookOnTable.SetActive(!bookOpen);
+
+        //Switches sound based on if we're picking it up or putting it down
+        if (bookOpen) { PlayAudio(pickUp); } else { PlayAudio(putDown); }
+    }
+
+    //Takes a audio clip and feeds it to this objects audio source
+    void PlayAudio(AudioClip inAudio)
+    {
+        audioPlayer.clip = inAudio;
+        audioPlayer.Play();
     }
 }
