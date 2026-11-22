@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        threeStrikesOut();
+        fourStrikesOut();
     }
 
     public void CheckAnswer()
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     }
 
     //Game over conditionals.
-    public void threeStrikesOut()
+    public void fourStrikesOut()
     {
         if (handManager.amountWrong == 4)
         {

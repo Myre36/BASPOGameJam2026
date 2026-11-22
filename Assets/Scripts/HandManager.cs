@@ -118,14 +118,14 @@ public class HandManager : MonoBehaviour
         //Picks a random number between 0 and 9. UnityEngine just to make sure no conflict between System.Random and UnityEngine.Random.
         handNumber = UnityEngine.Random.Range(0, (hands.Length));
 
-        //Checks how long it is based on the length of the object hands.
+        //Checks how long it is based on the length of the array hands.
         for (int i = 0; i < hands.Length; i++)
         {
             //As long as the number randomly chosen is a number in the array, randomly generate a new one until it isn't in the array
             while (handNumber == handNumberChecker[i])
             {
                 //Checks if the last element in the array is not null. If it is breaks the loop. To prevent game crash and memory leak.
-                if (handNumberChecker[9] != null)
+                if (handNumberChecker[hands.Length - 1] != null)
                 {
                     Debug.Log("I broke");
                     break;
