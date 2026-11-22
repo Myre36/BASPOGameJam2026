@@ -2765,7 +2765,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f0f62e79a6cac7a4fb412075d7cc162d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.653
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6791,7 +6791,7 @@ PrefabInstance:
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: shotHuman
       value: 
-      objectReference: {fileID: 8300000, guid: 1518d81490b6f9344baca412a8fc7a73, type: 3}
+      objectReference: {fileID: 8300000, guid: da5ec9a0db4dd8f4690291a6e5f9a8d6, type: 3}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: walkAudio
       value: 
@@ -6815,7 +6815,7 @@ PrefabInstance:
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: buttonPress
       value: 
-      objectReference: {fileID: 8300000, guid: 936970df4429ab84fa57c959b614c743, type: 3}
+      objectReference: {fileID: 8300000, guid: 938efdd67d6500f448a45d6aad08e551, type: 3}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: gameManager
       value: 
@@ -6827,11 +6827,11 @@ PrefabInstance:
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: shotInfected
       value: 
-      objectReference: {fileID: 8300000, guid: 9c7dc4634e14b2d45ae0198ba66875e9, type: 3}
+      objectReference: {fileID: 8300000, guid: 4f2e06745cfb4714b92040ee3ea4a1c2, type: 3}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: gateOpenHuman
       value: 
-      objectReference: {fileID: 8300000, guid: a68da58d23dfcee4dbf299f89f99520e, type: 3}
+      objectReference: {fileID: 8300000, guid: f2a9f60c5b517f640854d8ecb3ed94e5, type: 3}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: startDayButton
       value: 
@@ -6839,7 +6839,7 @@ PrefabInstance:
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: gateOpenInfected
       value: 
-      objectReference: {fileID: 8300000, guid: 610e9a61b0b795447a322f943d40c491, type: 3}
+      objectReference: {fileID: 8300000, guid: ebd5c5ff40ce99b4da1e7f2ce462b917, type: 3}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: guessHumanButton
       value: 

@@ -104,8 +104,8 @@ public class HandManager : MonoBehaviour
             buttonAudio.Play();
             if (goodOrWrong[handNumber] == true)
             {
-                amountGood++;
-                gateAudio.clip = gateOpenInfected;
+                amountGood++; 
+                gateAudio.clip = gateOpenHuman;
             }
             else
             {
