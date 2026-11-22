@@ -1,6 +1,7 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class HandManager : MonoBehaviour
 {
@@ -116,24 +117,35 @@ public class HandManager : MonoBehaviour
         yield return new WaitForSeconds(3);
 
         //Picks a random number between 0 and 9.
-        handNumber = UnityEngine.Random.Range(0, (hands.Length + 1));
+        handNumber = UnityEngine.Random.Range(0, (hands.Length));
 
         //Checks how long it is based on the length of the object hands.
         for (int i = 0; i < hands.Length; i++)
         {
-            for (int j = 0; j < hands.Length; j++)
+            //As long as the number randomly chosen is a number in the array, randomly generate a new one until it isn't in the array
+            while (handNumber == handNumberChecker[i])
             {
-                //As long as the number randomly chosen is a number in the array, randomly generate a new one until it isn't in the array
-                while (handNumber == handNumberChecker[j])
+                if (handNumberChecker[9] != null)
                 {
-                    handNumber = UnityEngine.Random.Range(0, (hands.Length + 1));
+                    Debug.Log("I broke");
+                    break;
                 }
-            }  
+                else 
+                {
+                    handNumber = UnityEngine.Random.Range(0, (hands.Length));
+                    i = 0;
+                }
+            }
+
+            Debug.Log(handNumberChecker[i]);
         }
 
-        //Adds the number into the array. Increases addNumber after so that it will not change a number already chosen.
-        handNumberChecker[addNumber] = handNumber;
-        addNumber++;
+        if (addNumber !<= 9)
+        {
+            //Adds the number into the array. Increases addNumber after so that it will not change a number already chosen.
+            handNumberChecker[addNumber] = handNumber;
+            addNumber++;
+        }
 
         hands[handNumber].SetActive(true);
         buttonsCanBePressed = true;
