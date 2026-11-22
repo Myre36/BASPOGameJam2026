@@ -50,11 +50,16 @@ MonoBehaviour:
   book: {fileID: 0}
   pageSprites:
   - {fileID: 2588965437645987274, guid: f66a0fc96f904824d9cdaea7de0680b3, type: 3}
-  - {fileID: 848697184373492302, guid: cd8ff1c1f3b378144af313e20649d9d5, type: 3}
-  - {fileID: -5210605757840286950, guid: e0bbb4beb9583284aa719c485b0ddc67, type: 3}
-  - {fileID: 533572491300144185, guid: c60f1cc6750399840aeb5b626dbea56b, type: 3}
-  - {fileID: -7352319878372871529, guid: 2b5f972e30ab67643b29b81b27ac9ea8, type: 3}
-  - {fileID: -9045481101141076781, guid: 03ba213e4b0d29841900f483cef1d948, type: 3}
+  - {fileID: -8431299861382341790, guid: 0bb2350cea31442a090b113a14f70b91, type: 3}
+  - {fileID: -8451734445146665650, guid: a81d4c5d884c446e0bd679ef1d0b5870, type: 3}
+  - {fileID: -3897482547941959796, guid: 44784366ca2ed4f22adfca49cbb5edd0, type: 3}
+  - {fileID: 899452515982202758, guid: 127f315adeff549f1be8771fa5c398b7, type: 3}
+  - {fileID: 5974279179295995951, guid: 0ce75dd9c240548f0894c19365f69a48, type: 3}
+  - {fileID: 2045301812426485287, guid: aee70f9bd8ecd41d6b74758b62bc85d9, type: 3}
+  - {fileID: 1848645812133170339, guid: 2073f4d1e0e2243d4adb389656f51a5e, type: 3}
+  - {fileID: -9197421152413706129, guid: 61869a50a7da74af1807047a653ad5e4, type: 3}
+  - {fileID: 3941023158912774886, guid: d09736560773742e6855798eea56aff1, type: 3}
+  - {fileID: 6434622188655494788, guid: e89568d361c604251b24316d2cec01c2, type: 3}
   bookPage: 0
   bookOpen: 0
   audioPlayer: {fileID: 824036367504895596}
