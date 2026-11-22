@@ -118,6 +118,7 @@ public class HandManager : MonoBehaviour
 
             hands[handNumber].SetActive(false);
             buttonsCanBePressed = false;
+            gameManager.everyPerson++;
 
             StartCoroutine(DisplayHandsWithDelay());
         }
@@ -146,6 +147,8 @@ public class HandManager : MonoBehaviour
 
             hands[handNumber].SetActive(false);
             buttonsCanBePressed = false;
+
+            gameManager.everyPerson++;
 
             StartCoroutine(DisplayHandsWithDelay());
         }

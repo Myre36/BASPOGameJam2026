@@ -34,12 +34,18 @@ public class GameManager : MonoBehaviour
         {
             handManager = GameObject.FindWithTag("Hand").GetComponent<HandManager>();
         }
+
+        if(everyPerson >= 19)
+        {
+            everyPerson = 0;
+            SceneManager.LoadScene("DayOver");
+        }
     }
 
     void FixedUpdate()
     {
         fourStrikesOut();
-        DayDone();
+        //DayDone();
     }
 
     public void CheckAnswer()
