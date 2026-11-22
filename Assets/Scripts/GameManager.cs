@@ -6,22 +6,40 @@ public class GameManager : MonoBehaviour
     //Grabbing elements from HandManager script.
     [SerializeField] private HandManager handManager; //amountWrong amountGood
 
+    public static GameManager Instance { get; private set; }
+
     //Array people for amount of people for the first day. Gives 5 people. Non-temporary placeholder dayOver.
-    public bool?[] people = new bool?[5];
+    public bool?[] people = new bool?[10];
     [SerializeField] private bool dayOver = default;
 
     // For CheckAnswer() 
-    public int peopleChecker = 1;
-    private int maxPeople = 0;
+    public int peopleChecker = 0;
+    public int everyPerson = 0;
 
     void Awake()
+    { 
+        //Making sure there are no duplicates.
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+    void Update()
     {
-        
+        if (handManager == null)
+        {
+            handManager = GameObject.FindWithTag("Hand").GetComponent<HandManager>();
+        }
     }
 
     void FixedUpdate()
     {
         fourStrikesOut();
+        DayDone();
     }
 
     public void CheckAnswer()
@@ -31,20 +49,29 @@ public class GameManager : MonoBehaviour
         {
             if (people[i] == false)
             {
-                maxPeople = 0;
+                everyPerson++;
+                Debug.Log(everyPerson);
                 return;
             }
             else
             {
-                maxPeople++;
+                everyPerson++;
+                Debug.Log(everyPerson);
+                peopleChecker++;
             }
+        }
+    }
 
-            // If every person in people are true, dayOver is true.
-            if (maxPeople == people.Length)
-            {
-                handManager.amountWrong = 0;
-                dayOver = true;
-            }
+    public void DayDone()
+    {
+        if (people.Length <= everyPerson)
+        {
+            dayOver = true;
+        }
+
+        if (dayOver == true)
+        {
+            SceneManager.LoadScene("DayOver");
         }
     }
 
