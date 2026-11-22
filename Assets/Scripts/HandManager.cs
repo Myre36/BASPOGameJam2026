@@ -49,7 +49,28 @@ public class HandManager : MonoBehaviour
     public GameObject bloodTwo;
     public GameObject bloodThree;
 
-    
+    //Audio
+    public AudioSource walkAudio;
+    public AudioClip walkIn;
+
+    //TODO
+    public AudioClip walkOut;
+
+    public AudioSource lightAudio;
+    public AudioClip turnOn;
+
+    //TODO
+    public AudioClip turnOff;
+
+    public AudioSource turretAudio;
+    public AudioClip shotInfected;
+    public AudioClip shotHuman;
+
+    public AudioSource gateAudio;
+    public AudioClip gateOpenInfected;
+    public AudioClip gateOpenHuman;
+
+
     //The start of day action
     public void StartDayAction()
     {
@@ -61,6 +82,9 @@ public class HandManager : MonoBehaviour
         guessHumanButtonVisual.SetActive(false);
         guessNotHumanButton.SetActive(true);
         guessNotHumanButtonVisual.SetActive(false);
+
+        lightAudio.clip = turnOn;
+        lightAudio.Play();
 
         //Starts the couroutine that makes the hand appear
         StartCoroutine(DisplayFirstHandWithDelay());
@@ -74,12 +98,16 @@ public class HandManager : MonoBehaviour
             if (goodOrWrong[handNumber] == true)
             {
                 amountGood++;
+                gateAudio.clip = gateOpenInfected;
             }
             else
             {
                 BloodSplatter();
                 amountWrong++;
+                gateAudio.clip = gateOpenInfected;
             }
+
+            gateAudio.Play();
 
             hands[handNumber].SetActive(false);
             buttonsCanBePressed = false;
@@ -96,12 +124,16 @@ public class HandManager : MonoBehaviour
             if (goodOrWrong[handNumber] == false)
             {
                 amountGood++;
+                turretAudio.clip = shotInfected;
             }
             else
             {
                 BloodSplatter();
                 amountWrong++;
+                turretAudio.clip = shotHuman;
             }
+
+            turretAudio.Play();
 
             hands[handNumber].SetActive(false);
             buttonsCanBePressed = false;
@@ -112,8 +144,13 @@ public class HandManager : MonoBehaviour
 
     //Couroutine for displaying the first hand
     IEnumerator DisplayHandsWithDelay()
-    {     
-        yield return new WaitForSeconds(3);
+    {
+        //Play audio of someone walking in
+        walkAudio.clip = walkIn;
+        walkAudio.Play();
+        
+        //Suggestion: Getting the length of the audio clip above to control this wait
+        yield return new WaitForSeconds(walkIn.length + 0.5f);
 
         //Picks a random number between 0 and 9. UnityEngine just to make sure no conflict between System.Random and UnityEngine.Random.
         handNumber = UnityEngine.Random.Range(0, (hands.Length));
