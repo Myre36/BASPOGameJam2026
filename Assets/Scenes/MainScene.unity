@@ -2133,7 +2133,7 @@ PrefabInstance:
     - target: {fileID: 2983686710500103194, guid: 9c74a95a7a615f94d8bede4b508a01ea, type: 3}
       propertyPath: inputManager
       value: 
-      objectReference: {fileID: 1880639770}
+      objectReference: {fileID: 0}
     - target: {fileID: 2983686710500103194, guid: 9c74a95a7a615f94d8bede4b508a01ea, type: 3}
       propertyPath: pageSprites.Array.size
       value: 7
@@ -3518,22 +3518,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: InputManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6840818261941061176, guid: 45dd9084536f75f4bbea466d48e61cb3, type: 3}
+      propertyPath: m_TagString
+      value: Input
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45dd9084536f75f4bbea466d48e61cb3, type: 3}
---- !u!114 &1880639770 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4286966481457458524, guid: 45dd9084536f75f4bbea466d48e61cb3, type: 3}
-  m_PrefabInstance: {fileID: 1880639769}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffc748a7731e52441b7269af07620c04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InputManager
 --- !u!1 &1910553199
 GameObject:
   m_ObjectHideFlags: 0
@@ -4114,14 +4107,14 @@ SceneRoots:
   - {fileID: 1801921815}
   - {fileID: 1622044908}
   - {fileID: 138855548}
-  - {fileID: 828421144232802442}
   - {fileID: 1134103413}
   - {fileID: 1589302084}
   - {fileID: 1547222879}
   - {fileID: 1910553201}
-  - {fileID: 951338025}
-  - {fileID: 1880639769}
   - {fileID: 699638066}
   - {fileID: 275784444}
   - {fileID: 449874410}
+  - {fileID: 828421144232802442}
+  - {fileID: 951338025}
+  - {fileID: 1880639769}
   - {fileID: 22484410}
