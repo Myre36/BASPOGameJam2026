@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class HandManager : MonoBehaviour
 {
@@ -15,9 +16,6 @@ public class HandManager : MonoBehaviour
     [SerializeField]
     private bool[] goodOrWrong;
 
-    //The current hand number
-    private int handNumber = 0;
-
     //The light switch
     public GameObject startDayButton;
     public GameObject startDayButtonVisual;
@@ -28,8 +26,13 @@ public class HandManager : MonoBehaviour
     public GameObject guessNotHumanButton;
     public GameObject guessNotHumanButtonVisual;
 
+    //To stop mashing the buttons causing multiple shadows to be dispalyed on screen, where only the last one decided good or bad.
     private bool buttonsCanBePressed = default;
-    
+
+    // First one will always be zero, then in DisplayHandsWithDelay() it will now choose randomly.
+    private int handNumber = 0;
+    private int?[] handNumberChecker = new int?[10];
+    private int addNumber = 0;
 
     //How many wrong guesses you've made
     public int amountWrong = 0;
@@ -109,19 +112,40 @@ public class HandManager : MonoBehaviour
 
     //Couroutine for displaying the first hand
     IEnumerator DisplayHandsWithDelay()
-    {
-        
+    {     
         yield return new WaitForSeconds(3);
-        handNumber++;
+
+        //Picks a random number between 0 and 9.
+        handNumber = UnityEngine.Random.Range(0, (hands.Length + 1));
+
+        //Checks how long it is based on the length of the object hands.
+        for (int i = 0; i < hands.Length; i++)
+        {
+            for (int j = 0; j < hands.Length; j++)
+            {
+                //As long as the number randomly chosen is a number in the array, randomly generate a new one until it isn't in the array
+                while (handNumber == handNumberChecker[j])
+                {
+                    handNumber = UnityEngine.Random.Range(0, (hands.Length + 1));
+                }
+            }  
+        }
+
+        //Adds the number into the array. Increases addNumber after so that it will not change a number already chosen.
+        handNumberChecker[addNumber] = handNumber;
+        addNumber++;
+
         hands[handNumber].SetActive(true);
         buttonsCanBePressed = true;
     }
 
-    //Cououtine for going to the next game
+    //Couroutine for going to the next game
     IEnumerator DisplayFirstHandWithDelay()
     {
         yield return new WaitForSeconds(3);
         hands[handNumber].SetActive(true);
+        handNumberChecker[addNumber] = handNumber;
+        addNumber++;
         buttonsCanBePressed = true;
     }
 
