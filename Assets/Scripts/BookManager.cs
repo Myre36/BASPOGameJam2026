@@ -29,9 +29,7 @@ public class BookManager : MonoBehaviour
         // Checks for 1 frame if spacebar was pressed. Inverts bookOpen and then sets it to that inversion. Removes the book on the table.
         if (inputManager.sBar.WasPressedThisFrame())
         {
-            bookOpen = !bookOpen;
-            book.SetActive(bookOpen);
-            bookOnTable.SetActive(!bookOpen);
+            OpenBook();
         }
 
         if (inputManager.rClick.WasPressedThisFrame() && bookOpen == true)
@@ -57,5 +55,12 @@ public class BookManager : MonoBehaviour
     private void ShowPage()
     {
         book.GetComponent<Image>().sprite = pageSprites[bookPage];
+    }
+
+    public void OpenBook()
+    {
+        bookOpen = !bookOpen;
+        book.SetActive(bookOpen);
+        bookOnTable.SetActive(!bookOpen);
     }
 }
