@@ -4610,14 +4610,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
-      propertyPath: turnOn
-      value: 
-      objectReference: {fileID: 8300000, guid: e0a9285b8e00bca4381edfac79123278, type: 3}
-    - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
-      propertyPath: walkIn
-      value: 
-      objectReference: {fileID: 8300000, guid: b3728328187560345a80a8b69487f623, type: 3}
-    - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: bloodOne
       value: 
       objectReference: {fileID: 699638064}
@@ -4626,17 +4618,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 275784442}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
-      propertyPath: gateAudio
-      value: 
-      objectReference: {fileID: 1594475450}
-    - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: mainLight
       value: 
       objectReference: {fileID: 1910553199}
-    - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
-      propertyPath: shotHuman
-      value: 
-      objectReference: {fileID: 8300000, guid: 1518d81490b6f9344baca412a8fc7a73, type: 3}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: walkAudio
       value: 
@@ -4646,10 +4630,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 449874408}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
-      propertyPath: lightAudio
-      value: 
-      objectReference: {fileID: 1594475452}
-    - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: amountWrong
       value: 0
       objectReference: {fileID: 0}
@@ -4658,25 +4638,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 67744589}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
-      propertyPath: turretAudio
-      value: 
-      objectReference: {fileID: 1594475451}
-    - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
-      propertyPath: shotInfected
-      value: 
-      objectReference: {fileID: 8300000, guid: 9c7dc4634e14b2d45ae0198ba66875e9, type: 3}
-    - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
-      propertyPath: gateOpenHuman
-      value: 
-      objectReference: {fileID: 8300000, guid: a68da58d23dfcee4dbf299f89f99520e, type: 3}
-    - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: startDayButton
       value: 
       objectReference: {fileID: 1223093020}
-    - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
-      propertyPath: gateOpenInfected
-      value: 
-      objectReference: {fileID: 8300000, guid: 610e9a61b0b795447a322f943d40c491, type: 3}
     - target: {fileID: 2569759295297030542, guid: 7b15c4357e15e78479b5239637b61cff, type: 3}
       propertyPath: guessHumanButton
       value: 
