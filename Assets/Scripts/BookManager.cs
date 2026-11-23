@@ -10,7 +10,7 @@ public class BookManager : MonoBehaviour
     public Sprite[] pageSprites;
     public int bookPage = 0;
 
-    [SerializeField] private bool bookOpen = default;
+    public bool bookOpen = default;
 
     //Audio
     public AudioSource audioPlayer;
@@ -45,6 +45,7 @@ public class BookManager : MonoBehaviour
             if (bookPage >= pageSprites.Length)
             {
                 bookPage = (pageSprites.Length - 1);
+                return;
             }
             ShowPage();
             PlayAudio(pageTurn1);
@@ -56,6 +57,7 @@ public class BookManager : MonoBehaviour
             if (bookPage == -1)
             {
                 bookPage = 0;
+                return;
             }
             ShowPage();
             PlayAudio(pageTurn2);

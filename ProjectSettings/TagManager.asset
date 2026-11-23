@@ -8,6 +8,7 @@ TagManager:
   - Input
   - Hand
   - Game
+  - BookBSNote
   layers:
   - Default
   - TransparentFX

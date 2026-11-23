@@ -233,8 +233,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 306603540}
   largeNote: {fileID: 48254760}
+  noteBookList: []
 --- !u!114 &48254763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,7 +1049,7 @@ GameObject:
   - component: {fileID: 306603542}
   m_Layer: 5
   m_Name: Note4ButtonSmall
-  m_TagString: Untagged
+  m_TagString: BookBSNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1084,8 +1086,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 306603540}
   largeNote: {fileID: 48254760}
+  noteBookList: []
 --- !u!114 &306603543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,8 +1375,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 2059975288}
   largeNote: {fileID: 406481459}
+  noteBookList: []
 --- !u!114 &406481462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,8 +2135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 1703285914}
   largeNote: {fileID: 655764002}
+  noteBookList: []
 --- !u!1 &658370383
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,8 +2556,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 1513128556}
   largeNote: {fileID: 726638091}
+  noteBookList: []
 --- !u!114 &726638094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3062,7 +3072,7 @@ GameObject:
   - component: {fileID: 1088387169}
   m_Layer: 5
   m_Name: Note3ButtonSmall
-  m_TagString: Untagged
+  m_TagString: BookBSNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3080,8 +3090,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 1088387168}
   largeNote: {fileID: 1264032944}
+  noteBookList: []
 --- !u!114 &1088387170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3763,8 +3775,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 1088387168}
   largeNote: {fileID: 1264032944}
+  noteBookList: []
 --- !u!114 &1264032947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4163,7 +4177,7 @@ GameObject:
   - component: {fileID: 1513128562}
   m_Layer: 5
   m_Name: Note2ButtonSmall
-  m_TagString: Untagged
+  m_TagString: BookBSNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4309,8 +4323,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 1513128556}
   largeNote: {fileID: 726638091}
+  noteBookList: []
 --- !u!1 &1535209273
 GameObject:
   m_ObjectHideFlags: 0
@@ -5261,7 +5277,7 @@ GameObject:
   - component: {fileID: 1628419331}
   m_Layer: 5
   m_Name: Note5ButtonSmall
-  m_TagString: Untagged
+  m_TagString: BookBSNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5279,8 +5295,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 1628419330}
   largeNote: {fileID: 1683146656}
+  noteBookList: []
 --- !u!114 &1628419332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5424,7 +5442,7 @@ GameObject:
   - component: {fileID: 1649921103}
   m_Layer: 5
   m_Name: BookButton
-  m_TagString: Untagged
+  m_TagString: BookBSNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5610,8 +5628,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 1628419330}
   largeNote: {fileID: 1683146656}
+  noteBookList: []
 --- !u!114 &1683146659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5828,7 +5848,7 @@ GameObject:
   - component: {fileID: 1703285920}
   m_Layer: 5
   m_Name: Note1ButtonSmall
-  m_TagString: Untagged
+  m_TagString: BookBSNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5974,8 +5994,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 1703285914}
   largeNote: {fileID: 655764002}
+  noteBookList: []
 --- !u!1 &1704372491
 GameObject:
   m_ObjectHideFlags: 0
@@ -6538,7 +6560,7 @@ GameObject:
   - component: {fileID: 2059975290}
   m_Layer: 5
   m_Name: Note6ButtonSmall
-  m_TagString: Untagged
+  m_TagString: BookBSNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6575,8 +6597,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BringUpPostedNotes
   inputManager: {fileID: 1880639770}
+  bookManager: {fileID: 0}
   smallNote: {fileID: 2059975288}
   largeNote: {fileID: 406481459}
+  noteBookList: []
 --- !u!114 &2059975291
 MonoBehaviour:
   m_ObjectHideFlags: 0
