@@ -2692,6 +2692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookManager
       objectReference: {fileID: 0}
+    - target: {fileID: 637826411855209012, guid: 9c74a95a7a615f94d8bede4b508a01ea, type: 3}
+      propertyPath: m_TagString
+      value: Book
+      objectReference: {fileID: 0}
     - target: {fileID: 998495532181034274, guid: 9c74a95a7a615f94d8bede4b508a01ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.8
@@ -6137,7 +6141,7 @@ GameObject:
   - component: {fileID: 1870857884}
   m_Layer: 5
   m_Name: Book
-  m_TagString: Book
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
