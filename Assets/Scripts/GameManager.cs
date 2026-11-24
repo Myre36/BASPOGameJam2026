@@ -31,16 +31,26 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if (handManager == null)
-        {
-            handManager = GameObject.FindWithTag("Hand").GetComponent<HandManager>();
-        }
-
-        if(everyPerson >= 19)
+        if (everyPerson >= 19)
         {
             everyPerson = 0;
             SceneManager.LoadScene("DayOver");
         }
+    }
+   void OnEnable()
+   {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+   }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name != "MainScene") return;
+        handManager = GameObject.FindWithTag("Hand").GetComponent<HandManager>();
     }
 
     void FixedUpdate()

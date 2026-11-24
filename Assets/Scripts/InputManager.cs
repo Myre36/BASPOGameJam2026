@@ -11,8 +11,7 @@ public class InputManager : MonoBehaviour
     public InputAction rClick;
     void Awake()
     {
-        OnEnable();
-
+        
         //Making sure there are no duplicates.
         if (Instance != null && Instance != this)
         {

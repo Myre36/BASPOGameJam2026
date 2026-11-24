@@ -1,4 +1,6 @@
+using UnityEditor.EditorTools;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BookManager : MonoBehaviour
@@ -28,11 +30,6 @@ public class BookManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inputManager == null)
-        {
-            inputManager = GameObject.FindWithTag("Input").GetComponent<InputManager>();
-        }
-
         // Checks for 1 frame if spacebar was pressed. Inverts bookOpen and then sets it to that inversion. Removes the book on the table.
         if (inputManager.sBar.WasPressedThisFrame())
         {
@@ -63,6 +60,14 @@ public class BookManager : MonoBehaviour
             PlayAudio(pageTurn2);
         }
     }
+
+    void OnEnable()
+    {
+        string scene = SceneManager.GetActiveScene().name;
+        if (scene != "MainScene") return;
+        inputManager = GameObject.FindWithTag("Input").GetComponent<InputManager>();
+    }
+
     private void ShowPage()
     {
         book.GetComponent<Image>().sprite = pageSprites[bookPage];

@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -75,6 +76,12 @@ public class HandManager : MonoBehaviour
     public AudioSource buttonAudio;
     public AudioClip buttonPress;
 
+    void OnEnable()
+    {
+        string scene = SceneManager.GetActiveScene().name;
+        if (scene != "MainScene") return;
+        GameObject.Find("GameManager");
+    }
 
     //The start of day action
     public void StartDayAction()

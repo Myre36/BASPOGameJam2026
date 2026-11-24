@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BringUpPostedNotes : MonoBehaviour
 {
@@ -10,9 +11,15 @@ public class BringUpPostedNotes : MonoBehaviour
     public GameObject largeNote;
     public GameObject[] noteBookList;
 
+    void Awake()
+    {
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
+        /*
         if (inputManager == null)
         {
             inputManager = GameObject.FindWithTag("Input").GetComponent<InputManager>();
@@ -27,6 +34,7 @@ public class BringUpPostedNotes : MonoBehaviour
         {
             bookManager = GameObject.FindWithTag("Book").GetComponent<BookManager>();
         }
+        */
 
         if (bookManager.bookOpen == true)
         {
@@ -37,6 +45,15 @@ public class BringUpPostedNotes : MonoBehaviour
         {
             CloseNote();
         }
+    }
+
+    void OnEnable()
+    {
+        string scene = SceneManager.GetActiveScene().name;
+        if (scene != "MainScene") return;
+        inputManager = GameObject.FindWithTag("Input").GetComponent<InputManager>();
+        noteBookList = GameObject.FindGameObjectsWithTag("BookBSNote");
+        bookManager = GameObject.FindWithTag("Book").GetComponent<BookManager>();
     }
 
     public void BringUpNote()
