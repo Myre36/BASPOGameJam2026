@@ -200,7 +200,7 @@ public class HandManager : MonoBehaviour
         }
 
         //To avoid game loop breaks. Because addNumber is updated after checking this condition it needs to be the same number as the last element in the array. 
-        if (addNumber !<= (handNumberChecker.Length - 1))
+        if (addNumber <= (handNumberChecker.Length - 1))
         {
             //Adds the number into the array. Increases addNumber after so that because array elements start at 0.
             handNumberChecker[addNumber] = handNumber;
