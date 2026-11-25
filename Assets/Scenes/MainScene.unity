@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 205029417}
     - target: {fileID: 1647810534764441429, guid: ed5b8e59e61a9c144a57c5fc53f30fb6, type: 3}
       propertyPath: people.Array.size
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6022134106212318656, guid: ed5b8e59e61a9c144a57c5fc53f30fb6, type: 3}
       propertyPath: m_LocalPosition.x
