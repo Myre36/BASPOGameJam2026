@@ -1,6 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
-using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +11,11 @@ public class HandManager : MonoBehaviour
     //A refrence to the hands that are displayed through the day
     [SerializeField]
     private GameObject[] hands;
+
+    //Uses int?[] because of its ability to have null. No reason to [SerializeField] array of nullable elements are not supported in unity inspector.
+    private int?[] handNumberChecker;
+    //addNumber is what changes the nullable elements array (handNumberChecker) to actual values.
+    private int addNumber = 0;
 
     //A list of bools for if the cooresponding hands in the other array
     [SerializeField]
@@ -33,10 +36,6 @@ public class HandManager : MonoBehaviour
 
     // First one will always be zero, then in DisplayHandsWithDelay() it will now choose randomly.
     private int handNumber = 0;
-
-    [SerializeField] 
-    private int?[] handNumberChecker = new int?[20];
-    private int addNumber = 0;
 
     //How many wrong guesses you've made
     public int amountWrong = 0;
@@ -78,6 +77,9 @@ public class HandManager : MonoBehaviour
 
     void OnEnable()
     {
+        handNumberChecker = new int?[hands.Length];
+
+        //Checks for the MainScene scene and if not doesn't try to find the GameManager GameObject.
         string scene = SceneManager.GetActiveScene().name;
         if (scene != "MainScene") return;
         GameObject.Find("GameManager");
@@ -181,7 +183,7 @@ public class HandManager : MonoBehaviour
             //As long as the number randomly chosen is a number in the array, randomly generate a new one until it isn't in the array
             while (handNumber == handNumberChecker[i])
             {
-                //Checks if the last element in the array is not null. If it is breaks the loop. To prevent game crash and memory leak.
+                //Checks if the last element in the array has a value. If it has breaks the loop. To prevent game freeze and memory leak.
                 if (handNumberChecker[hands.Length - 1] != null)
                 {
                     Debug.Log("I broke");
@@ -198,9 +200,9 @@ public class HandManager : MonoBehaviour
         }
 
         //To avoid game loop breaks. Because addNumber is updated after checking this condition it needs to be the same number as the last element in the array. 
-        if (addNumber !<= (hands.Length - 1))
+        if (addNumber !<= (handNumberChecker.Length - 1))
         {
-            //Adds the number into the array. Increases addNumber after so that it will not change a number already chosen.
+            //Adds the number into the array. Increases addNumber after so that because array elements start at 0.
             handNumberChecker[addNumber] = handNumber;
             addNumber++;
             //Gameplay with a full array will be randomized without checking for duplicates due to the conditions of the while loop above.
@@ -218,6 +220,7 @@ public class HandManager : MonoBehaviour
 
         yield return new WaitForSeconds(walkIn.length);
         hands[handNumber].SetActive(true);
+
         handNumberChecker[addNumber] = handNumber;
         addNumber++;
         buttonsCanBePressed = true;

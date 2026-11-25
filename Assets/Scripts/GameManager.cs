@@ -12,13 +12,11 @@ public class GameManager : MonoBehaviour
     public bool[] people = new bool[10];
     [SerializeField] private bool dayOver = default;
 
-    // For CheckAnswer() 
-    public int peopleCorrect = 0;
+    // Checks [] people length in DayDone().
     public int everyPerson = 0;
 
     void Awake()
     {
-        Debug.Log(people.Length);
         //Making sure there are no duplicates.
         if (Instance != null && Instance != this)
         {
@@ -31,11 +29,7 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if (everyPerson >= 19)
-        {
-            everyPerson = 0;
-            SceneManager.LoadScene("DayOver");
-        }
+
     }
    void OnEnable()
    {
@@ -56,13 +50,14 @@ public class GameManager : MonoBehaviour
     void FixedUpdate()
     {
         fourStrikesOut();
-        //DayDone();
+        DayDone();
     }
 
     public void DayDone()
     {
         if (people.Length <= everyPerson)
         {
+            everyPerson = 0;
             dayOver = true;
         }
 
